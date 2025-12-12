@@ -3,8 +3,9 @@ import { Character } from '../interfaces/character.interface';
 import { DbzService } from '../services/dbz.service';
 
 @Component({
-  selector: 'app-dbz-main-page',
-  templateUrl: './main-page.component.html',
+    selector: 'app-dbz-main-page',
+    templateUrl: './main-page.component.html',
+    standalone: false
 })
 export class MainPageComponent {
   constructor(private dbzService: DbzService){}

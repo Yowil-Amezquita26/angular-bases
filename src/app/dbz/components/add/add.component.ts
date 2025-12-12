@@ -2,9 +2,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
-  selector: 'app-dbz-add-character',
-  templateUrl: './add.component.html',
-  styleUrl: './add.component.css',
+    selector: 'app-dbz-add-character',
+    templateUrl: './add.component.html',
+    styleUrl: './add.component.css',
+    standalone: false
 })
 export class AddComponent {
   @Input() header!: string;
